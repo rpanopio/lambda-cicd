@@ -9,7 +9,7 @@ on:
 
 jobs:
     deploy-lambda: # Name of our job
-        runs-on: ubuntu-lates # Sets or specifies the runner
+        runs-on: ubuntu-latest # Sets or specifies the runner
         steps:
             - uses: actions/checkout@v2
 
@@ -32,5 +32,5 @@ jobs:
               run: |
                 cd lambda
                 zip -r lambda.zip .
-                aws lambda update-function-code --function-name my-test-cicd-lambda --zip-fileb://lambda.zip
+                aws lambda update-function-code --function-name my-test-cicd-lambda --zip-file fileb://lambda.zip
                 
