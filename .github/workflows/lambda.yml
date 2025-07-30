@@ -6,8 +6,6 @@ on:
       - main
     paths:
       - 'lambda/**'
-  workflow_dispatch:
-
 jobs:
     deploy-lambda: # Name of our job
         runs-on: ubuntu-latest # Sets or specifies the runner
